@@ -4,6 +4,7 @@ import wavio as wv
 import pyttsx3
 import commands
 from audio_manager import *
+import webbrowser
 
 MAX_TENTATIVAS = 1
 
@@ -43,6 +44,13 @@ while True:
 
         elif fala == 'quem é seu Criador':
             commands.criador()
+
+        elif 'pesquisar' in fala:
+            fala.replace('pesquisar', '')
+            fala.replace('Pesquisar', '')
+            url = fala
+            commands.pesquisa(url)
+
         elif fala == 'sair':
             commands.exit()
             break
