@@ -5,7 +5,7 @@ import pyttsx3
 import commands
 from audio_manager import *
 
-MAX_TENTATIVAS = 3
+MAX_TENTATIVAS = 1
 
 while True:
     grava()
@@ -23,13 +23,14 @@ while True:
             tentativa += 1
 
         if text is None:
-            iafala('Não foi possível reconhecer o áudio. Tente novamente mais tarde.')
+            iafala('Não foi possível reconhecer o áudio, tente novamente')
             continue
 
-        print(f'Você disse: {text}')
+        
 
         fala = text
-
+        
+        print(f'Você disse: {fala}')
         if fala == 'Olá':
             commands.gretting()
 
@@ -39,6 +40,9 @@ while True:
             with open('notas.txt', 'a+') as arquivo:
                 arquivo.write(f'{notas}\n')
 
+
+        elif fala == 'quem é seu Criador':
+            commands.criador()
         elif fala == 'sair':
             commands.exit()
             break

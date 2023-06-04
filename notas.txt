@@ -1,1 +1,3 @@
 <_io.TextIOWrapper name='notas.txt' mode='r+' encoding='cp1252'>
+['', '']
+['', '']
