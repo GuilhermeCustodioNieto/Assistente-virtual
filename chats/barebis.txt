@@ -1,0 +1,37 @@
+pg: 
+
+raça: 29
+classe: 94
+127: antecedentes
+
+barebis Berserk
+feiticeiro humano
+idade: 29
+all valor +1
+1,81
+desl. 9m
+comum, gigante
+nv 1: 2 espaços dev1 nv
++2 bonus proficiencia
+dado vd: 1d6
+vida: 1d6 + mod const
+proficiencia: adagas, dardos, fundas, bordões, bestas leves, kit herbalismo
+
+teste de resistencia: inteligecia, sabedoria
+pericias: intuição e arcanismo
+
+3 truques
+2 magias
+
+cd magias: 8 + bonus proficiencia + mod. inteligencia
+
+mod ataque: proficinencia + inteligencia
+
+15: int
+14: const
+13: dext
+12: sab
+10: car
+8: for
+
+
